@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="board1" class="specificBoardClass">
+        <div id="specificBoardName">
+            <span id="boardHeader">b1</span>
+            <span id="boardIdSpan">board1</span>
+        </div>
+        <div class="addListButton">
+            <button id="saveList" type="button" class="btn btn-primary" data-toggle="modal" data-target="#listModal" data-placement="top">+Add List</button>
+        </div>
+        <div id="listContainer">
+            <div id="board1_list1" class="task-list">
+                <div class="task-header">
+                    <span>list1</span>
+                </div>
+                <div id="board1_list1_card1" class="todo-task" style="background:green" draggable="true">
+                    <div class="task-header">card1</div>
+                    <div class="task-description">desc</div>
+                    <button class="editCard">Edit</button>
+                    <button class="deleteCard">delete</button>
+                </div>
+                <div class="addCardButton">
+                    <button id="save" type="button" class="btn btn-primary open-modal" data-toggle="modal" data-target="#cardModal"
+                        data-placement="top">Add Card</button>
+                </div>
+            </div>
+            <div id="board1_list2" class="task-list">
+                <div class="task-header">
+                    <span>list2</span>
+                </div>
+                <div class="addCardButton">
+                    <button id="save" type="button" class="btn btn-primary open-modal" data-toggle="modal" data-target="#cardModal"
+                        data-placement="top">Add Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
